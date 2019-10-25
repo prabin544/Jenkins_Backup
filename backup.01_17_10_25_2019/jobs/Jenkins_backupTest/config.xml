@@ -1,0 +1,30 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>whoami
+echo &quot;This job will take jenkins backup&quot;
+rm -rf /tmp/jenkins_backup
+mkdir /tmp/jenkins_backup
+GITDIR=&quot;/tmp/jenkins_backup&quot;
+
+
+cd $GITDIR
+rm -rf *
+cp /var/lib/jenkins/config.xml /tmp/jenkins_backup</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

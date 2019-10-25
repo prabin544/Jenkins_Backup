@@ -1,0 +1,8 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Jenkins_backupTest
+[Jenkins_backupTest] $ /bin/sh -xe /tmp/jenkins5158266425631780353.sh
++ cp /var/lib/jenkins/config.xml /tmp/jenkins_backup
+cp: cannot create regular file '/tmp/jenkins_backup/config.xml': Permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

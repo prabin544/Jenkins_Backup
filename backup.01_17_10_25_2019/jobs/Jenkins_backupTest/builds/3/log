@@ -1,0 +1,13 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Jenkins_backupTest
+[Jenkins_backupTest] $ /bin/sh -xe /tmp/jenkins2586396026195437955.sh
++ whoami
+jenkins
++ echo 'This job will take jenkins backup'
+This job will take jenkins backup
++ rm -rf /tmp/jenkins_backup
+rm: cannot remove '/tmp/jenkins_backup/jenkins_backup.sh': Permission denied
+rm: cannot remove '/tmp/jenkins_backup/config.xml': Permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
